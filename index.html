@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cinemaniacs - Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="#hero"><img src="./img/cinemaniacs-logo.png" alt="Cinemaniacs Club logo" /></a>
+        <h1>Cinemaniacs Club</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#join">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero">
+          <h2>Discover the best movies with us</h2>
+          <p>
+            We review the latest movies and share our thoughts with the
+            community.
+          </p>
+          <button><a href="#join">Join now</a></button>
+        </div>
+      </section>
+      <section id="about" class="about-section">
+        <h2>About us</h2>
+        <p>
+          We are a group of movie lovers who want to share our passion with the
+          world. Our goal is to provide insightful and entertaining reviews of
+          the latest movies.
+        </p>
+        <p>
+          Join our community and discover new movies, discuss your favorites,
+          and meet other movie enthusiasts.
+        </p>
+      </section>
+      <section id="reviews" class="review-section">
+        <h2>Latest reviews</h2>
+        <div class="review-grid">
+          <article class="movie-review">
+            <h3>Guardians of the Galaxy 3</h3>
+            <img src="./img/movies/gofg-movie.png" alt="Movie poster" />
+            <p>
+              Guardians of the Galaxy Vol. 3 is an amazing addition to the
+              franchise. It's a rollercoaster ride of emotions with hilarious
+              moments. James Gunn's direction and storytelling make this movie a
+              happy place to return to in the MCU...
+            </p>
+            <a href="#read-more">Read more</a>
+          </article>
+          <article class="movie-review">
+            <h3>Super Mario Bros</h3>
+            <img src="./img/movies/mario-movie.png" alt="Movie poster" />
+            <p>
+              Super Mario Bros is a fun, lighthearted movie that brings the
+              classic video game characters to life in a unique way. The quirky
+              humor and imaginative visuals make it a great watch for fans of
+              the game and newcomers alike...
+            </p>
+            <a href="#read-more">Read more</a>
+          </article>
+          <article class="movie-review">
+            <h3>Princess Mononoke</h3>
+            <img src="./img/movies/princessm-movie.png" alt="Movie poster" />
+            <p>
+              "Princess Mononoke" is a masterpiece of animation and
+              storytelling, with stunning visuals and a complex exploration of
+              humanity's relationship with nature. It's a beautiful and
+              thought-provoking film that leaves a lasting impression...
+            </p>
+            <a href="#read-more">Read more</a>
+          </article>
+        </div>
+      </section>
+      <section id="join" class="join-section">
+        <h2>Join our club</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <button type="submit">Join now</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Cinemanics Club. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

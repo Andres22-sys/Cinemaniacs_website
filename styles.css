@@ -1,0 +1,425 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+/* Set body background and font family */
+body {
+  background-color: #111;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Set header styles */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+header img {
+ width: 170px;
+ height: 170px;
+}
+
+h1 {
+  color: #e50914c8;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #e50914c8;
+}
+
+/* Set hero section styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./img/cinema-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero {
+  background-color: #000000df;
+  padding: 20px;
+  width: 100%;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 1rem 2rem;
+  background-color: #e50914c8;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero button:hover {
+  background-color: #ff3f3f;
+}
+
+.hero a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Set about section styles */
+.about-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.about-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Set reviews section styles */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.review-section {
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.review-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.review-section article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.review-section h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.review-section img {
+  max-width: 100%;
+  max-height: 500px;
+  margin-bottom: 1rem;
+}
+
+.review-section p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.8rem;
+  width: 70%;
+}
+
+.review-section a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.review-section a:hover {
+  text-decoration: underline;
+  color: #e50914c8;
+}
+
+/* Set join section styles */
+
+.join-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: #333;
+  color: #fff;
+}
+
+.join-section h2 {
+  font-size: 2rem;
+}
+
+.join-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.join-section label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.join-section input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.join-section input:focus {
+  outline: none;
+}
+
+.join-section button {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #e50914c8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.join-section button:hover {
+  background-color: #ff3f3f;
+}
+
+/* Set footer styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer li {
+  margin-left: 1rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries */
+
+/* For large devices */
+@media screen and (max-width: 1200px) {
+  .review-section img{
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (width <= 1200px){
+  .hero {
+    padding: 2rem 2rem;
+    margin-top: 6rem;
+  }
+
+  .review-section img{
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+}
+
+/* For small devices */
+@media screen and (width <= 844px) {
+  header {
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  header img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .header-content h1 {
+    visibility: hidden;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  nav li {
+    margin: 0.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 3rem;
+    margin-top: 6rem;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-section p {
+    font-size: 1.2rem;
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-section h2 {
+    font-size: 2rem;
+  }
+
+  .review-section article {
+    width: 100%;
+  }
+
+  .review-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .review-section img {
+    max-width: 60%;
+    height: 250px;
+  }
+
+  .review-section p {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  footer p {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  footer ul {
+    margin-top: 1rem;
+  }
+
+  footer li {
+    margin: 0.5rem;
+  }
+}
