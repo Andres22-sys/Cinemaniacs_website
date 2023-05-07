@@ -320,7 +320,7 @@ footer a:hover {
 }
 
 /* For small devices */
-@media screen and (width <= 844px) {
+@media screen and (max-width: 844px) {
   header {
     padding: 0.5rem;
     width: 100%;
