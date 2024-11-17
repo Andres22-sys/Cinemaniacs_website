@@ -1,0 +1,368 @@
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Body styles */
+body {
+  background-color: #141414;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Header styles */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  height: 50px;
+  padding: 2.5rem 1rem;
+}
+
+.header-content h1 {
+  color: rgba(229, 9, 20, 0.8);
+  font-size: 1.5rem; /* Adjust for mobile readability */
+}
+
+header img {
+  width: 120px; /* Reduce logo size for mobile */
+  height: auto;
+  padding-top: 1rem;
+  padding-left: 0;margin-left: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: rgba(229, 9, 20, 0.8);
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+  display: none; /* Hidden on larger screens */
+  font-size: 2rem;
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 10000; /* Ensure it stays above other elements */
+}
+
+
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("img/cinema-hero.jpg") center/cover;
+  color: #fff;
+  text-align: center;
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.87);
+  padding: 20px;
+  width: 100%;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: rgba(229, 9, 20, 0.8);
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero a:hover {
+  background-color: #ff3f3f;
+}
+
+/* About section styles */
+.about-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.49);
+}
+
+.about-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.about-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Reviews section styles */
+.review-section {
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.review-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.movie-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.movie-review h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.movie-review img {
+  max-width: 100%;
+  max-height: 500px;
+  margin-bottom: 1rem;
+}
+
+.movie-review p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+.movie-review a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.movie-review a:hover {
+  text-decoration: none;
+  color: rgba(229, 9, 20, 0.8);
+}
+
+/* Join section styles */
+.join-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.49);
+  color: #fff;
+}
+
+.join-section h2 {
+  font-size: 2rem;
+}
+
+.join-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.join-section label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.join-section input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+}
+
+.join-section input:focus {
+  outline: none;
+}
+
+.join-section button {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: rgba(229, 9, 20, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.join-section button:hover {
+  background-color: #ff3f3f;
+}
+
+/* Footer styles */
+footer {
+  padding: 2rem;
+  background-color: #141414;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer li {
+  margin-left: 1rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .header-content {
+    display: flex;
+    justify-content: space-between; /* Align logo to the left, menu icon to the right */
+    align-items: center;
+    padding: 0 1rem;
+    height: 60px;
+  }
+
+  .header-content h1 {
+    display: none; /* Completely hide the header title */
+  }
+
+  header img {
+    width: 120px; /* Adjust logo size for mobile */
+    height: auto;
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger menu button on mobile */
+    font-size: 1.8rem;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: auto; /* Push the menu icon to the far right */
+  }
+
+  nav ul {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    background-color: #141414;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 8px;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex; /* Show menu when active */
+  }
+
+  nav li {
+    margin: 1rem 0;
+    text-align: right;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    color: rgba(229, 9, 20, 0.8); /* Hover effect */
+  }
+
+  /* Reviews Sections */
+  .review-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
